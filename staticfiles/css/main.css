@@ -4,7 +4,7 @@ body {
 }
 header {
     padding: 1.5rem 0 1rem 0;
-    background: rgba(0, 0, 0, 0.8) url('header.jpg');
+    background: rgba(0, 0, 0, 0.8) url('/staticfiles/images/header.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
