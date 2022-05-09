@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-header {
+.header {
     padding: 1.5rem 0 1rem 0;
     background: rgba(0, 0, 0, 0.8) url('/staticfiles/images/header.jpg');
     height: 100%;
