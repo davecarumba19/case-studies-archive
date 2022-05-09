@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    padding: 1.5rem 0 1rem 0;
+    background: rgba(0, 0, 0, 0.8) url('/staticfiles/images/header\ bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.nav {
+    padding: 0;
+    position: relative;
+}
+.nav a {
+    margin-left: 1rem;
+    z-index: 1;
+}
+.nav span {
+    align-self: center;
+    margin-left: auto;
+    margin-right: 1rem;
+    z-index: 1;
+}
+.nav span i {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.nav ul {
+    position: absolute;
+    background-color: rgba(22, 22, 22,1);
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: -1.5rem;
+    display: none;
+    border-radius: 0 0 10px 10px;
+}
+.nav ul a {
+    margin: 0;
+    text-decoration: none;
+}
+.nav ul a li {
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.nav ul a li:hover {
+    background-color: #2265f4;
+    border-radius: 10px;
+}
+.subscribe-btn {
+    background-color: #2265f4;
+    border-radius: 10px;
+}
+.home {
+    margin-top: 5.5rem;
+}
+.case {
+    width: 90%;
+    margin-top: 2rem;
+}
+.case h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.case p {
+    color: white;
+}
+.case form {
+    margin-top: 2rem;
+}
+.case form label {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+.email-btn {
+    width: 100%;
+    border: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.submit-btn {
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 0.5rem;
+    background-color: #2265f4;
+}
+.add-info {
+    width: 90%;
+    margin-top: 2rem ;
+    padding: 1rem;
+}
+.add-info h1 {
+    text-align: center;
+    color: #2265f4;
+    font-weight: 700;
+}
+.add-info h3 {
+    text-align: center;
+    font-weight: 600;
+}
+.add-info p {
+    text-align: center;
+    margin: 0;
+}
+.statistics {
+    display: grid;
+    gap: 10px;
+    width: 90%;
+    margin-top: 2rem ;
+    padding: 1rem 1rem 4rem 1rem;
+}
+.item1, .item2, .item3, .item4, .item5 {
+    background: linear-gradient(90deg, rgba(34,101,244,1) 0%, rgba(77,134,243,1) 100%);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.item1 h1, .item2 h1, .item3 h1, .item4 h1, .item5 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+.item1 p, .item2 p, .item3 p, .item4 p, .item5 p {
+    color: white;
+    margin: 0;
+}
+.item6 {
+    display: grid;
+}
+.item6 a {
+    text-align: center;
+    color: #2265f4;
+    border: 1px solid #2265f4;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.item6 a:hover {
+    background-color: #2265f4;
+    color: white;
+}
+.modal-content {
+    background-color: rgba(77,134,243,1);
+    padding: 1rem;
+}
+.modal-content h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+}
+.modal-content p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+}
+.modal-content form {
+    margin-top: 2rem;
+}
+.subscribe-email-btn {
+    width: 100%;
+    border: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.subscribe-submit-btn {
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 0.5rem;
+    background-color: #2265f4;
+}
+footer {
+    background-color: rgba(22, 22, 22,1);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+@media screen and (min-width: 321px) {
+    .statistics {
+        padding: 1rem 1rem 4rem 1rem;
+    }
+    .item1, .item2, .item3, .item4, .item5 {
+        text-align: center;
+    }
+    .modal-content h1 {
+        font-size: 40px;
+    }
+    .modal-content p {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .statistics {
+        padding: 1rem 1rem 4rem 1rem;
+    }
+    .item1, .item2, .item3, .item4, .item5 {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        align-items: center;
+    }
+    .item1 h1, .item2 h1, .item3 h1, .item4 h1, .item5 h1 {
+        font-size: 50px;
+        padding: 1rem;
+    }
+    .item1 p, .item2 p, .item3 p, .item4 p, .item5 p {
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 850px) {
+    header {
+        padding: 1.5rem 0 2rem 0;
+    }
+    .nav span {
+        display: none;
+        
+    }
+    .nav ul {
+        width: auto;
+        background-color: rgba(22, 22, 22,0);
+        display: flex;
+        margin: 0 0 0 auto;
+        padding: 0;
+        position: static;
+    }
+    .nav ul a {
+        margin: 0 0 0 1rem;
+        text-decoration: none;
+    }
+    .nav ul a li {
+        list-style-type: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .nav ul a li:hover {
+        background-color: #2265f4;
+        border-radius: 10px;
+    }
+    .home {
+        margin-top: 0;
+    }
+    .case h1, .case p{
+        width: 50%;
+    }
+    .email-btn {
+        width: 50%;
+        text-align: left;
+    }
+    .submit-btn {
+        border: 0;
+        width: 20%;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        margin-top: 0.5rem;
+        background-color: #2265f4;
+    }
+    .statistics {
+        padding: 1rem 1rem 4rem 1rem;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .statistics {
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        gap: 10px;
+        width: 90%;
+        margin-top: 2rem ;
+        padding: 1rem 1rem 4rem 1rem;
+    }
+    .item1, .item3, .item5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .item2, .item4, .item6 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+    .item6 {
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
